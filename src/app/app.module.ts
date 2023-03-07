@@ -7,18 +7,30 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './components/products/products.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes :Routes =[
+  {path:'',component:ProductsComponent},
+  {path:'products',component:ProductsComponent},
+  {path:'orders',component:OrdersComponent},
+
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes)
+
   ],
   providers: [],
   bootstrap: [AppComponent]

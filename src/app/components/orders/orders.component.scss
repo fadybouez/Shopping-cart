@@ -1,0 +1,54 @@
+.parentOrders {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.orderCard {
+  width: 300px;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(128, 128, 128, 0.035);
+
+}
+
+p {
+  border: 1px solid grey;
+  width: 270px;
+  margin-left: 10px;
+}
+
+
+.content span {
+  font-size: 22px;
+  margin: 10px;
+
+}
+
+.content div {
+  font-size: 20px;
+}
+
+.btnDetails {
+  button {
+    width: 100%;
+    background-color: #32B0A9;
+    border: none;
+    text-align: center;
+    height: 45px;
+    cursor: pointer;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+
+  }
+}
+
+.btnDetails button:hover {
+  opacity: 0.7;
+
+}

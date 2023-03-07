@@ -18,5 +18,14 @@ export class ServiceService {
     );
   }
 
+  // get  orders from json file
+
+getOrders(){
+  return this.http.get("assets/order-master-dp/orders.json").pipe(
+    catchError((error)=>{
+return throwError(()=>error.message || 'some error from server')
+    })
+  );
+}
 
 }
