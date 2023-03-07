@@ -1,14 +1,26 @@
 nav {
   background-color: #83c5be;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 15px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  width: 100%;
 
 
-  h1 {
 
+  .logo {
+    font-size: 24px;
+    padding-left: 100px;
+    text-align: center;
     font-weight: bold;
+  }
 
+  .pages {
+    padding-right: 100px;
   }
 
   ul {
@@ -16,10 +28,22 @@ nav {
     justify-content: center;
 
     li {
-      font-weight: bold;
+
       padding-left: 15px;
+      padding-right: 15px;
       list-style: none;
-      font-size: 18px;
+
+
+      :hover {
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+
+      }
     }
 
   }

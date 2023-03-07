@@ -16,6 +16,7 @@ $primary-color: #32B0A9;
 }
 
 .card {
+  overflow: hidden;
   h1 {
     color: $primary-color;
   }
@@ -23,8 +24,13 @@ $primary-color: #32B0A9;
 
 .parentCards .card img {
   max-width: 100%;
+  transition: transform 0.5s;
 }
+.parentCards .card img:hover{
+  transform: scale(1.2, 1.2);
+  opacity: 0.5;
 
+}
 .price {
 
   font-size: 22px;

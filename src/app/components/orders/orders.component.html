@@ -1,0 +1,15 @@
+<div class="parentOrders">
+  <div class="orderCard" *ngFor="let order of orders" id={{order.OrderId}}>
+
+    <div class="content">
+      <p><span>OrderId:</span>{{order.OrderId}}</p>
+      <p><span>Total price:</span> {{order.PaymentType}}</p>
+      <p><span>PaymentType:</span> {{order.PaymentType}}</p>
+      <p title={{order.OrderDate}}> <span>OrderDate:</span> {{order.OrderDate |date:'short'}}</p>
+    </div>
+
+    <div class="btnDetails">
+      <button routerLink="/orderDetails/{{order.OrderId}}"> Show details</button>
+    </div>
+  </div>
+</div>
