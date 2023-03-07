@@ -1,0 +1,26 @@
+nav {
+  background-color: #83c5be;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+
+
+  h1 {
+
+    font-weight: bold;
+
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      font-weight: bold;
+      padding-left: 15px;
+      list-style: none;
+      font-size: 18px;
+    }
+
+  }
+}

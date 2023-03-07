@@ -1,0 +1,49 @@
+$primary-color: #32B0A9;
+
+.parentCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  text-align: center;
+  font-family: arial;
+  width: 300px;
+}
+
+.card {
+  h1 {
+    color: $primary-color;
+  }
+}
+
+.parentCards .card img {
+  max-width: 100%;
+}
+
+.price {
+
+  font-size: 22px;
+}
+
+.card {
+  button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: $primary-color;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+.card button:hover {
+  opacity: 0.7;
+}

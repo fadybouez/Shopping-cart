@@ -1,5 +1,13 @@
-<p>products works!</p>
-<div *ngFor="let product of products">
-<p>{{product.ProductName}}</p>
+
+<!-- show  products data in browser -->
+
+<div class="parentCards">
+  <div class="card" *ngFor="let product of products">
+    <img src={{product.ProductImg}} alt="">
+    <h1>{{product.ProductName}}</h1>
+    <p class="price">Price: {{product.ProductPrice}}</p>
+    <p>Quantity: {{product.AvailablePieces}}</p>
+    <p><button>Add to Cart</button></p>
+  </div>
 
 </div>

@@ -10,11 +10,13 @@ export class ProductsComponent implements OnInit {
 
   constructor(private serviceService:ServiceService) { }
 products:any
-orders:any
+
+   //get products data from service
+
   ngOnInit(): void {
     this.serviceService.getProduct().subscribe((data:any)=>{
       this.products=data
-      console.log(data)},(error:any)=>{console.log(error)})
+      },(error:any)=>{console.log(error)})
 
 
 
