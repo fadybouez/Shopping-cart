@@ -7,6 +7,9 @@ import { catchError, throwError } from 'rxjs';
 export class ServiceService {
 
   constructor(private http:HttpClient) { }
+
+  //get products data from json file
+
   getProduct() {
     return this.http.get("assets/order-master-dp/products.json").pipe(
       catchError((error) => {
