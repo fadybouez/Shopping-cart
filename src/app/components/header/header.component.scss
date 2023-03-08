@@ -14,13 +14,13 @@ nav {
 
   .logo {
     font-size: 24px;
-    padding-left: 100px;
+    padding-left: 20px;
     text-align: center;
     font-weight: bold;
   }
 
   .pages {
-    padding-right: 100px;
+    padding-right: 10px;
   }
 
   ul {
@@ -28,11 +28,9 @@ nav {
     justify-content: center;
 
     li {
-
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 10px;
+      // padding-right: 10px;
       list-style: none;
-
 
       :hover {
         color: white;
@@ -41,10 +39,12 @@ nav {
       a {
         text-decoration: none;
         color: black;
-        font-size: 25px;
+        font-size: 20px;
 
       }
     }
 
   }
 }
+
+

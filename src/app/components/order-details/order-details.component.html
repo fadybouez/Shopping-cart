@@ -1,0 +1,61 @@
+<div class="container">
+
+  <div class="orderTitle box">
+    <h1>Order Details</h1>
+  </div>
+<!--  start information user -->
+  <div class="userAndOrderInformation box">
+    <section class="orderInformation">
+      <p><span>Order Id: </span><br>{{SingleOrder[0].OrderId}} </p>
+      <p><span>Order Date: </span><br>{{SingleOrder[0].OrderDate|date:'short'}} </p>
+    </section>
+
+    <section class="userInformatin">
+      <p><span>User Name</span><br>{{SingleUser[0].Name}} </p>
+      <p><span>Phone</span><br>{{SingleUser[0].Phone}} </p>
+      <p><span>Email</span><br>{{SingleUser[0].Email}} </p>
+      <p><span>Address</span><br>{{SingleUser[0].Address}} </p>
+    </section>
+  </div>
+<!--  end information user -->
+
+<!--  start information products -->
+  <div class="productsInformation box">
+    <section class="itemProduct">
+      <div>
+        <p>Product: product 1</p>
+        <p>Price: 126$</p>
+        <p>Quantity: 2</p>
+      </div>
+      <div class="divImg">
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          alt="">
+      </div>
+    </section>
+
+    <section class="itemProduct">
+      <div>
+        <p>Product: product 1</p>
+        <p>Price: 126$</p>
+        <p>Quantity: 2</p>
+      </div>
+      <div class="divImg">
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          alt="">
+      </div>
+    </section>
+
+    <section class="priceAndpaym">
+      <p><span>Total Price: </span> 500$</p>
+      <p><span>Payment: </span> {{SingleOrder[0].PaymentType}}</p>
+    </section>
+  </div>
+<!--  end information products -->
+
+  <div class="btnSubmit ">
+    <button>Next Step</button>
+  </div>
+
+</div>

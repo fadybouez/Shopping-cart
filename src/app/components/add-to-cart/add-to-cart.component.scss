@@ -1,0 +1,139 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 10px;
+
+}
+
+.productsForm {
+  grid-column: 1/3;
+
+
+  .title {
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+.informationUser {
+  background-color: rgba(168, 218, 220, 0.3647058824);
+  padding: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  overflow: auto;
+
+  .product {
+    border: 1px solid gray;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+
+    p {
+      padding-left: 10px;
+    }
+  }
+
+}
+.TotalPrice{
+
+  p{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.containUser {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 15px;
+
+
+}
+
+input {
+  margin-bottom: 20px;
+  display: block;
+  background-color: rgb(250, 251, 252);
+  cursor: text;
+  border-radius: 3px;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 6px;
+  height: 36px;
+  width: 270px;
+
+}
+
+.inputs ,select{
+  padding-left: 10px;
+  select{
+    width:100px;
+    margin-bottom: 10px;
+  }
+}
+
+.btnAdd {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+button {
+  background-color: #32B0A9;
+  border: none;
+  color: white;
+  width: 50%;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin: auto;
+  }
+  .containUser {
+
+    width: 60%;
+  }
+}
+
+
+@media screen and (max-width: 570px)  {
+
+  .containUser {
+
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px)  {
+
+  .containUser {
+
+    width: 90%;
+  }
+}
