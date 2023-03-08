@@ -9,13 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { RouterModule, Routes } from '@angular/router';
+import { OrderDetailsComponent } from './components/order-details/order-details.component';
+import { AddToCartComponent } from './components/add-to-cart/add-to-cart.component';
 
-const routes :Routes =[
-  {path:'',component:ProductsComponent},
-  {path:'products',component:ProductsComponent},
-  {path:'orders',component:OrdersComponent},
-
-]
 
 @NgModule({
   declarations: [
@@ -23,13 +19,15 @@ const routes :Routes =[
     ProductsComponent,
     HeaderComponent,
     FooterComponent,
-    OrdersComponent
+    OrdersComponent,
+    OrderDetailsComponent,
+    AddToCartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+
 
   ],
   providers: [],

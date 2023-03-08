@@ -28,4 +28,14 @@ return throwError(()=>error.message || 'some error from server')
   );
 }
 
+// get  users from json file
+
+getUsers(){
+  return this.http.get("assets/order-master-dp/users.json").pipe(
+    catchError((error)=>{
+return throwError(()=>error.message || 'some error from server')
+    })
+  );
+}
+
 }
