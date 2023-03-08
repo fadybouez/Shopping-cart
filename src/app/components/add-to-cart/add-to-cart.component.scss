@@ -28,7 +28,8 @@
 .quintet .add,.remove{
   border: none;
   cursor: pointer;
-  background-color: rgba(128, 128, 128, 0.227);
+  background-color: rgb(255, 255, 255);
+  width: 20px;
 }
 .informationUser {
   background-color: rgba(168, 218, 220, 0.3647058824);
@@ -64,7 +65,7 @@
   i{
     display: grid;
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
   }
 
