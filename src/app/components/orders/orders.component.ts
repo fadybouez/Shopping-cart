@@ -4,18 +4,34 @@ import { ServiceService } from 'src/app/services/service.service';
 @Component({
   selector: 'app-orders',
   templateUrl: './orders.component.html',
-  styleUrls: ['./orders.component.scss']
+  styleUrls: ['./orders.component.scss'],
 })
 export class OrdersComponent implements OnInit {
+  constructor(private serviceService: ServiceService) {}
+  orders: any=[];
+  products: any=[];
 
-  constructor(private serviceService:ServiceService) { }
-orders:any
-//get orders from service
+
+  //get orders from service
 
   ngOnInit(): void {
-this.serviceService.getOrders().subscribe((data:any)=>{
-  this.orders=data
-},(error:any)=>{console.log(error)})
+
+    this.serviceService.getOrders().subscribe(
+      (data: any) => {
+        this.orders = data;
+
+      },
+      (error: any) => {
+        console.log(error);
+      }
+    );
+
+
+
+
   }
+
+
+
 
 }
